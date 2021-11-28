@@ -23,7 +23,7 @@ const MyComponent = () => {
     const [ isActive, setIsActive ] = useState( false );
 
     const styles = {
-        visibility: isActive ?? 'visible' : 'hidden';
+        visibility: isActive ? 'visible' : 'hidden';
     }
 
     useFocusTrap( ref, isActive );
