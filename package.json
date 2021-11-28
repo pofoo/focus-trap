@@ -1,6 +1,6 @@
 {
   "name": "@pofo/focus-trap",
-  "version": "0.0.1-beta.w",
+  "version": "0.0.1-beta.1",
   "description": "React Focus Trap Hook for Refs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
