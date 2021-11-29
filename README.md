@@ -43,7 +43,9 @@ const MyComponent = () => {
 ```
 
 # !IMPORTANT!
-*useFocusTrap only works if there is AT LEAST one focuable element within the target. That one focusable element should probably be a close button to close the target*.
+- *useFocusTrap only works if there is AT LEAST one focuable element within the target. That one focusable element should probably be a close button to close the target*.
+- Your toggle button to mount and unmount the modal / dialog box needs to be an immediate sibling of your modal / dialog box (right before). This is important for both functionality and coherent HTML structure.
+- Your modal / dialog box component should have a focusable element as its last HTML element. As of now, if the user clicks onto a non focusable element within the your modal / dialog component and the next focusable element if off the target - THE FOCUS TRAP WILL BREAK.
 
 ### Customizing Options
 By default, nothing on the target is focused when activated. This can be customized through the third optional options parameter.
